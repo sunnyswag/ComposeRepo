@@ -73,26 +73,25 @@ private fun rememberBroadcastReceiver(
                 calendar.timeZone = timeZone
             }
 
+            // update time
             currentTime.value = System.currentTimeMillis()
             calendar.timeInMillis = currentTime.value
         }
     }
 }
 
-fun getResourceId(num: Int): Int {
-    return when (num) {
-        0 -> R.drawable.clock_num_0
-        1 -> R.drawable.clock_num_1
-        2 -> R.drawable.clock_num_2
-        3 -> R.drawable.clock_num_3
-        4 -> R.drawable.clock_num_4
-        5 -> R.drawable.clock_num_5
-        6 -> R.drawable.clock_num_6
-        7 -> R.drawable.clock_num_7
-        8 -> R.drawable.clock_num_8
-        9 -> R.drawable.clock_num_9
-        else -> R.drawable.clock_num_0
-    }
+fun getResourceId(num: Int) = when (num) {
+    0 -> R.drawable.clock_num_0
+    1 -> R.drawable.clock_num_1
+    2 -> R.drawable.clock_num_2
+    3 -> R.drawable.clock_num_3
+    4 -> R.drawable.clock_num_4
+    5 -> R.drawable.clock_num_5
+    6 -> R.drawable.clock_num_6
+    7 -> R.drawable.clock_num_7
+    8 -> R.drawable.clock_num_8
+    9 -> R.drawable.clock_num_9
+    else -> R.drawable.clock_num_0
 }
 
 data class TimeResourceIds(
